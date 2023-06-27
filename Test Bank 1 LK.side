@@ -1,0 +1,101 @@
+{
+  "id": "026d8b1b-5423-4dcb-b2c6-a89267e46380",
+  "version": "2.0",
+  "name": "Bank",
+  "url": "https://idemo.bspb.ru",
+  "tests": [{
+    "id": "bfdfd644-4dd1-409f-9e79-8261f3edf82b",
+    "name": "LK",
+    "commands": [{
+      "id": "dcea1340-4458-4af8-b8d9-225ce4068147",
+      "comment": "",
+      "command": "open",
+      "target": "/auth?response_type=code&client_id=1&redirect_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fsuccess&prefetch_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fprefetch&force_new_session=true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7d015ef-a7f0-41c4-9911-47a2fac8435f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1544x1311",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "932d2eef-baab-4cc7-b45b-b5a7925c7916",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-control:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d90e3b6b-e612-4d70-8256-5dc208c1f569",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d709970-8648-462a-a3dc-9792209e2f66",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//button[@id='login-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ce1d2ee-b0c0-4b56-83f4-60c5f8fb99a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.resend-text",
+      "targets": [
+        ["css=.resend-text", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Снова через 117 сек')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e6036d0-ee81-4cf5-a62c-9a377004b272",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-otp-button",
+      "targets": [
+        ["id=login-otp-button", "id"],
+        ["css=#login-otp-button", "css:finder"],
+        ["xpath=//button[@id='login-otp-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "652073a8-7223-431a-8127-9e03631e7246",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bfdfd644-4dd1-409f-9e79-8261f3edf82b"]
+  }],
+  "urls": ["https://idemo.bspb.ru/"],
+  "plugins": []
+}
